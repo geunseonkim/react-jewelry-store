@@ -1,0 +1,170 @@
+{
+    "products": [
+        {
+            "id": 0,
+            "img": "https://georgiakemball.com/cdn/shop/files/IMG_7583.jpg?v=1689348991",
+            "title": "CHERUB PIN",
+            "price": 373.00,
+            "choice": true,
+            "new": true,
+            "size": [
+                "Free"
+            ]
+        },
+        {
+            "id": 1,
+            "img": "https://georgiakemball.com/cdn/shop/files/IMG_7580.jpg?v=1689349069",
+            "title": "CHERUB NECKLACE",
+            "price": 454.00,
+            "choice": true,
+            "new": false,
+            "size": [
+                "45cm length chain",
+                "60cm length chain"
+            ]
+        },
+        {
+            "id": 2,
+            "img": "https://georgiakemball.com/cdn/shop/files/IMG_7573.jpg?v=1689347926",
+            "title": "CHERUB EARRINGS",
+            "price": 629.00,
+            "choice": false,
+            "new": true,
+            "size": [
+                "Sterling silver",
+                "Solid 9ct Gold"
+            ]
+        },
+        {
+            "id": 3,
+            "img": "https://georgiakemball.com/cdn/shop/files/IMG_9556.jpg?v=1701349848",
+            "title": "GOBLIN RING",
+            "price": 1385.00,
+            "choice": false,
+            "new": true,
+            "size": [
+                "UK RING SIZE M",
+                "UK RING SIZE N",
+                "UK RING SIZE O"
+            ]
+        },
+        {
+            "id": 4,
+            "img": "https://georgiakemball.com/cdn/shop/files/IMG_9563.jpg?v=1701349295",
+            "title": "GOBLIN NECKLACE",
+            "price": 1152.00,
+            "choice": true,
+            "new": false,
+            "size": [
+                "45cm length chain",
+                "60cm length chain"
+            ]
+        },
+        {
+            "id": 5,
+            "img": "https://georgiakemball.com/cdn/shop/files/IMG_8721.jpg?v=1695985962",
+            "title": "STARFISH CURB NECKLACE",
+            "price": 652.00,
+            "choice": false,
+            "new": true,
+            "size": [
+                "45cm length chain",
+                "50cm length chain"
+            ]
+        },
+        {
+            "id": 6,
+            "img": "https://georgiakemball.com/cdn/shop/files/IMG_9757.jpg?v=1702406895",
+            "title": "CHUNKY SILVER RING",
+            "price": 373.00,
+            "choice": true,
+            "new": false,
+            "size": [
+                "UK RING SIZE P"
+            ]
+        },
+        {
+            "id": 7,
+            "img": "https://georgiakemball.com/cdn/shop/files/IMG_9576.jpg?v=1701350290",
+            "title": "CUPID NECKLACE",
+            "price": 1153.00,
+            "choice": false,
+            "new": true,
+            "size": [
+                "45cm length chain",
+                "50cm length chain"
+            ]
+        },
+        {
+            "id": 8,
+            "img": "https://georgiakemball.com/cdn/shop/files/IMG_1831.jpg?v=1716563866",
+            "title": "TINY FLOWER NECKLACE",
+            "price": 280.00,
+            "choice": true,
+            "new": true,
+            "size": [
+                "45cm length chain",
+                "50cm length chain"
+            ]
+        },
+        {
+            "id": 9,
+            "img": "https://georgiakemball.com/cdn/shop/files/IMG_9740.jpg?v=1702407190",
+            "title": "CUPID EARRINGS",
+            "price": 920.00,
+            "choice": false,
+            "new": true,
+            "size": [
+                "9ct gold",
+                "Sterling silver"
+            ]
+        },
+        {
+            "id": 10,
+            "img": "https://georgiakemball.com/cdn/shop/files/IMG_2483.jpg?v=1719574009",
+            "title": "MEDIUM TWISTED HOOP EARRINGS",
+            "price": 641.00,
+            "choice": true,
+            "new": false,
+            "size": [
+                "9ct Gold"
+            ]
+        },
+        {
+            "id": 11,
+            "img": "https://georgiakemball.com/cdn/shop/files/IMG_2475.jpg?v=1719573669",
+            "title": "SMALL TWISTED HOOP EARRINGS",
+            "price": 431.00,
+            "choice": true,
+            "new": true,
+            "size": [
+                "9ct gold"
+            ]
+        },
+        {
+            "id": 12,
+            "img": "https://georgiakemball.com/cdn/shop/files/IMG_7697.jpg?v=1690456611",
+            "title": "ORGY RING",
+            "price": 664.00,
+            "choice": true,
+            "new": true,
+            "size": [
+                "UK Ring Size I",
+                "UK Ring Size T",
+                "UK Ring Size M"
+            ]
+        },
+        {
+            "id": 13,
+            "img": "https://georgiakemball.com/cdn/shop/files/IMG_04222.jpg?v=1732553205",
+            "title": "PUZZLE RING",
+            "price": 1863.00,
+            "choice": false,
+            "new": false,
+            "size": [
+                "UK Ring Size M",
+                "UK Ring Size L"
+            ]
+        }
+    ]
+}
