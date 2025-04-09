@@ -4,14 +4,19 @@ import { faUser } from "@fortawesome/free-regular-svg-icons";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ authenticate, setAuthenticate }) => {
   const navigate = useNavigate();
   const menuList = ["ALL", "RINGS", "NECKLACES", "EARRINGS"];
   const [showSearch, setShowSearch] = useState(false);
 
   const goToLogin = () => {
     navigate("/login");
+    if (authenticate) {
+      navigate("/");
+      setAuthenticate(false);
+    }
   };
+
   const goToMain = () => {
     navigate("/");
   };
@@ -24,15 +29,16 @@ const Navbar = () => {
       <div className="navbar navbar-header">
         <h1 onClick={goToMain}>Georgia Kemball</h1>
         <div className="navbar-divider"></div>
+
         <div className="navbar-links" onClick={goToLogin}>
           <FontAwesomeIcon icon={faUser} />
-          <p>LOGIN</p>
+          {authenticate ? <p>LOGOUT</p> : <p>LOGIN</p>}
         </div>
       </div>
       <div className="navbar">
         <ul className="navbar-menuList">
           {menuList.map((listItem) => (
-            <li>{listItem}</li>
+            <li key={listItem}>{listItem}</li>
           ))}
         </ul>
         <div className="navbar-divider"></div>

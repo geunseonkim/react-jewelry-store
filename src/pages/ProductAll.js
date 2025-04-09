@@ -5,9 +5,9 @@ import ProductCard from "../components/ProductCard";
 const ProductAll = () => {
   const [productList, setProductList] = useState([]);
   const getProducts = async () => {
-    // let url = "http://localhost:4000/products";
-    let url =
-      "https://my-json-server.typicode.com/geunseonkim/react-jewelry-store/products";
+    let url = "http://localhost:4000/products";
+    // let url =
+    //   "https://my-json-server.typicode.com/geunseonkim/react-jewelry-store/products";
     const response = await fetch(url);
     const data = await response.json();
     setProductList(data);
@@ -19,7 +19,7 @@ const ProductAll = () => {
     <div>
       <div className="products-container">
         {productList.map((item) => (
-          <div className="products-wrapper">
+          <div key={item} className="products-wrapper">
             <ProductCard item={item} />
           </div>
         ))}

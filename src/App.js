@@ -4,15 +4,24 @@ import ProductAll from "./pages/ProductAll";
 import ProductDetail from "./pages/ProductDetail";
 import Login from "./pages/Login";
 import Navbar from "./components/Navbar";
+import { useState } from "react";
+import PrivateRoute from "./routes/PrivateRoute";
 
 function App() {
+  const [authenticate, setAuthenticate] = useState(false);
   return (
     <div>
-      <Navbar />
+      <Navbar authenticate={authenticate} setAuthenticate={setAuthenticate} />
       <Routes>
         <Route path="/" element={<ProductAll />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/products/:id" element={<ProductDetail />} />
+        <Route
+          path="/login"
+          element={<Login setAuthenticate={setAuthenticate} />}
+        />
+        <Route
+          path="/product/:id"
+          element={<PrivateRoute authenticate={authenticate} />}
+        />
       </Routes>
     </div>
   );
