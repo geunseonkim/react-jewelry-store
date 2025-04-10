@@ -16,7 +16,7 @@ const ProductCard = ({ item }) => {
         <h4>{item?.title}</h4>
       </div>
       <div>
-        <p>${item?.price}ZD</p>
+        <p>${item?.price} NZD</p>
       </div>
       <div>
         <p>{item?.new === true ? "New arrival" : ""}</p>
