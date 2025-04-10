@@ -36,6 +36,23 @@ const Navbar = ({ authenticate, setAuthenticate }) => {
     setShowSearch(false);
     navigate("/");
   };
+
+  const handleSearchMenuList = (listItem) => {
+    let searchQuery = listItem;
+    if (listItem === "RINGS") {
+      searchQuery = "RING";
+    }
+    if (listItem === "NECKLACES") {
+      searchQuery = "NECKLACE";
+    }
+    if (listItem === "RINGS") {
+      searchQuery = "RING";
+    }
+    if (listItem === "ALL") {
+      searchQuery = "";
+    }
+    navigate(`/?q=${searchQuery}`);
+  };
   return (
     <div>
       <div className="navbar navbar-header">
@@ -50,7 +67,13 @@ const Navbar = ({ authenticate, setAuthenticate }) => {
       <div className="navbar">
         <ul className="navbar-menuList">
           {menuList.map((listItem) => (
-            <li key={listItem}>{listItem}</li>
+            <li
+              key={listItem}
+              tabindex="0"
+              onClick={() => handleSearchMenuList(listItem)}
+            >
+              {listItem}
+            </li>
           ))}
         </ul>
         <div className="navbar-divider"></div>

@@ -10,7 +10,7 @@ const ProductCard = ({ item }) => {
     <div onClick={goToProductDetail}>
       <img className="item-img" src={item?.img} />
       <div className="productCard-info">
-        <h6>{item?.choice === true ? "Conscious choice" : ""}</h6>
+        <h5>{item?.choice === true ? "Conscious choice" : ""}</h5>
         <h4>{item?.title}</h4>
         <p>
           {new Intl.NumberFormat("en-NZ", {

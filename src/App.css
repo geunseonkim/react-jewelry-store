@@ -40,6 +40,17 @@
 
 .navbar-menuList li {
   margin: 5px;
+  cursor: pointer;
+  outline: none;
+  tabindex: 0;
+}
+
+.navbar-menuList li:hover {
+  color: gray;
+}
+
+.navbar-menuList li:focus {
+  color: gray;
 }
 
 .search-bar {
@@ -103,6 +114,28 @@
 
 .item-img:hover {
   transform: scale(1.02);
+}
+
+.productCard-info {
+  position: relative;
+}
+
+.productCard-info h5 {
+  color: rgb(126, 49, 44);
+  margin-bottom: 5px;
+}
+
+.productCard-info h4 {
+  margin-top: 0px;
+}
+
+.productCard-info > p:nth-of-type(2) {
+  position: absolute;
+  top: -320px;
+  right: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
 }
 
 .products-container {
