@@ -9,16 +9,16 @@ const ProductCard = ({ item }) => {
   return (
     <div onClick={goToProductDetail}>
       <img className="item-img" src={item?.img} />
-      <div>
+      <div className="productCard-info">
         <h6>{item?.choice === true ? "Conscious choice" : ""}</h6>
-      </div>
-      <div>
         <h4>{item?.title}</h4>
-      </div>
-      <div>
-        <p>${item?.price} NZD</p>
-      </div>
-      <div>
+        <p>
+          {new Intl.NumberFormat("en-NZ", {
+            style: "currency",
+            currency: "NZD",
+          }).format(item?.price)}{" "}
+          NZD
+        </p>
         <p>{item?.new === true ? "New arrival" : ""}</p>
       </div>
     </div>

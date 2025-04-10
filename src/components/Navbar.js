@@ -24,6 +24,18 @@ const Navbar = ({ authenticate, setAuthenticate }) => {
   const toggleSearch = () => {
     setShowSearch((prev) => !prev);
   };
+
+  const searchProduct = (event) => {
+    if (event.key === "Enter") {
+      let keyword = event.target.value;
+      navigate(`/?q=${keyword}`);
+    }
+  };
+
+  const searchProductClose = () => {
+    setShowSearch(false);
+    navigate("/");
+  };
   return (
     <div>
       <div className="navbar navbar-header">
@@ -49,16 +61,14 @@ const Navbar = ({ authenticate, setAuthenticate }) => {
                 type="text"
                 placeholder="Search"
                 className="search-input"
+                onKeyPress={(event) => searchProduct(event)}
               />
               <FontAwesomeIcon
                 icon={faMagnifyingGlass}
                 className="search-icon"
               />
             </div>
-            <button
-              onClick={() => setShowSearch(false)}
-              className="search-close-btn"
-            >
+            <button onClick={searchProductClose} className="search-close-btn">
               ✕
             </button>
           </div>
