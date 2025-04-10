@@ -7,7 +7,8 @@ const ProductDetail = () => {
   const [productDetail, setProductDetail] = useState(null);
   const [qty, setQty] = useState(1);
   const getProductDetail = async () => {
-    let url = `http://localhost:4000/products/${id}`;
+    // let url = `http://localhost:4000/products/${id}`;
+    let url = `https://my-json-server.typicode.com/geunseonkim/react-jewelry-store/products/${id}`;
     let response = await fetch(url);
     let data = await response.json();
     setProductDetail(data);

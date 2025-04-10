@@ -8,9 +8,8 @@ const ProductAll = () => {
   const [query, setQuery] = useSearchParams();
   const getProducts = async () => {
     let searchQuery = query.get("q") || "";
-    let url = `http://localhost:4000/products?q=${searchQuery}`;
-    // let url =
-    //   "https://my-json-server.typicode.com/geunseonkim/react-jewelry-store/products";
+    // let url = `http://localhost:4000/products?q=${searchQuery}`;
+    let url = `https://my-json-server.typicode.com/geunseonkim/react-jewelry-store/products?q=${searchQuery}`;
     const response = await fetch(url);
     const data = await response.json();
     setProductList(data);
